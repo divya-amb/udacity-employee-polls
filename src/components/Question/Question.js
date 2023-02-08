@@ -16,11 +16,12 @@ const Question = ({ question }) => {
     } = question;
 
     return (
-      <div className="Question-container">
+      <Link to={`/questions/${qid}`} className="Question-link">
+        <div className="Question-container">
           <span>{authorName}</span>
           <span>{formatDate(timestamp)}</span>
-          <Link to={`/questions/${qid}`}>Answer</Link>
-      </div>
+        </div>
+      </Link>
     );
 }
 

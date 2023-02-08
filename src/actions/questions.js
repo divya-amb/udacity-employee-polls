@@ -40,10 +40,11 @@ export function handleAnswerQuestion({qid, answer}) {
 }
 
 
-function addQuestion(question) {
+function addQuestion(question, authedUserID) {
   return {
     type: ADD_QUESTION,
     question,
+    authedUserID,
   };
 }
 
@@ -56,9 +57,9 @@ export function handleAddQuestion({optionOneText, optionTwoText}) {
     return saveQuestion({
       optionOneText,
       optionTwoText,
-      author: authedUser,
+      author: authedUser.id,
     })
-      .then((question) => dispatch(addQuestion(question)))
+      .then((question) => dispatch(addQuestion(question, authedUser.id)))
       .then(() => dispatch(hideLoading()));
   };
 }

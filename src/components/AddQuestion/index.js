@@ -1,7 +1,3 @@
-const AddQuestion = () => {
-    return (
-        <div>AddQuestion</div>
-    );
-}
+import AddQuestion from "./AddQuestion";
 
 export default AddQuestion;

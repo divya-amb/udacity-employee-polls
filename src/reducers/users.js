@@ -8,7 +8,7 @@ export default function users(state = {}, action) {
         ...state,
         ...action.users,
       };
-    case ANSWER_QUESTION:
+    case ANSWER_QUESTION: {
       const { qid, authedUserID, answer } = action;
       return {
           ...state,
@@ -20,18 +20,20 @@ export default function users(state = {}, action) {
               }
           }
       };
-    /*case ADD_QUESTION:
-      const { question } = action;
+    }
+    case ADD_QUESTION: {
+      const { question, authedUserID } = action;
       return {
           ...state,
-          [authedUser]: {
-            ...state[authedUser],
-            questions: {
-                ...state[authedUser].questions,
-                qid,
-            }
+          [authedUserID]: {
+            ...state[authedUserID],
+            questions: [
+                ...state[authedUserID].questions,
+                question.id,
+            ]
         }
-      };*/
+      };
+    }
     default:
       return state;
   }

@@ -12,10 +12,10 @@ export function receiveQuestions(questions) {
     };
 }
 
-function answerQuestion({ qid, answer, authedUser }) {
+function answerQuestion({ qid, answer, authedUserID }) {
   return {
     type: ANSWER_QUESTION,
-    authedUser,
+    authedUserID,
     qid,
     answer,
   };
@@ -30,10 +30,10 @@ export function handleAnswerQuestion({qid, answer}) {
     return saveQuestionAnswer({
       qid,
       answer,
-      author: authedUser,
+      authedUser: authedUser.id,
     })
       .then(() => { 
-        dispatch(answerQuestion({qid, answer, authedUser})) 
+        dispatch(answerQuestion({qid, answer, authedUserID: authedUser.id})) 
       })
       .then(() => dispatch(hideLoading()));
   };

@@ -1,0 +1,74 @@
+.QuestionDetails-container {
+    border: solid darkorchid 0.1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    min-width: 15rem;
+}
+
+.QuestionDetails-avatar {
+    height: 50px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.QuestionDetails-headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.QuestionDetails-headerItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.QuestionDetails-optionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.QuestionDetails-option {
+    border: solid darkorchid 0.1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px mediumorchid;
+}
+
+.QuestionDetails-optionText {
+    flex: 1;
+    width: 100%;
+}
+
+.QuestionDetails-voteInfo {
+    border-top: solid darkorchid 0.1rem;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: end;
+    height: 1rem;
+}
+
+.QuestionDetails-answered {
+    background-color: plum;
+    box-shadow: inset 1px 1px mediumorchid;
+}
+
+.QuestionDetails-notAnswered {
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.NavBar-container {
+    background-color: darkorchid;
+    height: 15vh;
+    width: 100%;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavBar-header {
+    display: flex;
+}
+
+.NavBar-navigation {
+    background-color: mediumorchid;
+    display: flex;
+    flex: 2;
+    padding-top:0.5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.NavBar-element {
+    margin-left: 1rem;
+}
+
+.NavBar-elementEnd {
+    margin-right: 1rem;
+}

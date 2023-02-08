@@ -1,0 +1,9 @@
+.Loading-container {
+    flex: 1;
+    margin: 16rem;
+    padding: 0rem 2rem 2rem 2rem;
+    color: solid darkorchid 0.1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

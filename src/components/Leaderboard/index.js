@@ -1,7 +1,3 @@
-const Leaderboard = () => {
-    return (
-        <div>Leaderboard</div>
-    );
-}
+import Leaderboard from "./Leaderboard";
 
 export default Leaderboard;

@@ -1,0 +1,33 @@
+.Leaderboard-container {
+    border: solid darkorchid 0.1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.Leaderboard-container tr:nth-child(even){background-color: plum;}
+
+.Leaderboard-table {
+    min-width: 20rem;
+    width: 90%;
+    margin: 2rem;
+    border-spacing: 0px;
+    border: solid darkorchid 0.1rem;
+    border-radius: 0.5rem;
+}
+
+.Leaderboard-avatar {
+    height: 50px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.Leaderboard-user {
+    display: flex;
+    align-items: center;
+}
+

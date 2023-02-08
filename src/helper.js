@@ -4,7 +4,7 @@ export function formatDate (timestamp) {
     return time.substr(0, 5) + time.slice(-2) + ' | ' + d.toLocaleDateString()
   }
 
-  export function formatQuestion (question, author, authedUser) {
+  export function formatQuestion (question, author, authedUserID) {
     const { id: qid, optionOne, optionTwo, timestamp } = question
     const { name: authorName, id: authorID, avatarURL } = author
 
@@ -12,8 +12,8 @@ export function formatDate (timestamp) {
     const optionTwoVoteCount = (optionTwo.votes || []).length;
     const totalVoteCount = optionOneVoteCount + optionTwoVoteCount;
 
-    const optionOneAnswered = optionOne.votes.includes(authedUser);
-    const optionTwoAnswered = optionTwo.votes.includes(authedUser);
+    const optionOneAnswered = optionOne.votes.includes(authedUserID);
+    const optionTwoAnswered = optionTwo.votes.includes(authedUserID);
 
     return {
       authorName,

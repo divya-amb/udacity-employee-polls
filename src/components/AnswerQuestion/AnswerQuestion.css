@@ -1,0 +1,10 @@
+.AnswerQuestion-container {
+    border: solid darkorchid 0.1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}

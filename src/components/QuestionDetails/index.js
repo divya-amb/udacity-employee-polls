@@ -1,7 +1,3 @@
-const QuestionDetails = () => {
-    return (
-        <div>QuestionDetails</div>
-    );
-}
+import QuestionDetails from "./QuestionDetails";
 
 export default QuestionDetails;

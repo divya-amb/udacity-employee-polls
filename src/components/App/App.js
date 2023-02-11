@@ -45,9 +45,9 @@ const App = ({authedUserID, loading, dispatch}) => {
   );
 };
 
-const mapStateToProps = ({ authedUser, users = {} }) => ({
+const mapStateToProps = ({ authedUser, users = {}, questions = {} }) => ({
   authedUserID: authedUser.id,
-  loading: Object.keys(users).length === 0,
+  loading: Object.keys(users).length === 0 || Object.keys(questions).length === 0,
 });
 
 export default connect(mapStateToProps)(App);

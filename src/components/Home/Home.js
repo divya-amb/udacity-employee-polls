@@ -26,7 +26,7 @@ const Home = ({ answeredQuestionIDs, unansweredQuestionIDs }) => {
 }
 
 const mapStateToProps = ({ authedUser, questions, users }) => {
-    const currentUser = users[authedUser.id] || { answers: []};
+    const currentUser = users[authedUser.id] || { answers: {}};
     const answeredQuestionIDs = Object.keys(currentUser.answers);
     const unansweredQuestionIDs = Object.keys(questions).filter(id => answeredQuestionIDs.indexOf(id) === -1);
     return {

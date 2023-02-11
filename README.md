@@ -14,11 +14,11 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The login credentials can be obtained from the _DATA.js file within the data folder. The app will require login again if the URL is updated manually.\
+The login credentials can be obtained from the _DATA.js file within the src/data folder. The app will require login again if the URL is updated manually.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.

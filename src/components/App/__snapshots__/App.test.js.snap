@@ -20,6 +20,50 @@ Object {
                 Employee Polls
               </h1>
             </div>
+            <div
+              class="NavBar-navigation"
+            >
+              <div>
+                <span
+                  class="NavBar-element"
+                >
+                  <a
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </span>
+                <span
+                  class="NavBar-element"
+                >
+                  <a
+                    href="/leaderboard"
+                  >
+                    Leaderboard
+                  </a>
+                </span>
+                <span
+                  class="NavBar-element"
+                >
+                  <a
+                    href="/add"
+                  >
+                    Add Question
+                  </a>
+                </span>
+              </div>
+              <div>
+                <span
+                  class="NavBar-element NavBar-elementEnd"
+                >
+                  <button
+                    type="submit"
+                  >
+                    Login
+                  </button>
+                </span>
+              </div>
+            </div>
           </div>
         </form>
         <form>
@@ -79,6 +123,50 @@ Object {
             <h1>
               Employee Polls
             </h1>
+          </div>
+          <div
+            class="NavBar-navigation"
+          >
+            <div>
+              <span
+                class="NavBar-element"
+              >
+                <a
+                  href="/"
+                >
+                  Home
+                </a>
+              </span>
+              <span
+                class="NavBar-element"
+              >
+                <a
+                  href="/leaderboard"
+                >
+                  Leaderboard
+                </a>
+              </span>
+              <span
+                class="NavBar-element"
+              >
+                <a
+                  href="/add"
+                >
+                  Add Question
+                </a>
+              </span>
+            </div>
+            <div>
+              <span
+                class="NavBar-element NavBar-elementEnd"
+              >
+                <button
+                  type="submit"
+                >
+                  Login
+                </button>
+              </span>
+            </div>
           </div>
         </div>
       </form>

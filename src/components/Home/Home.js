@@ -26,7 +26,7 @@ const Home = ({ answeredQuestionIDs, unansweredQuestionIDs }) => {
 
     return (
         <>
-            <div class="Home-tab">
+            <div className="Home-tab">
                 <button onClick={() => setShowAnswerType(ANSWER_TYPE.UNANSWERED)} className={unansweredClassName}>Unanswered Polls</button>
                 <button onClick={() => setShowAnswerType(ANSWER_TYPE.ANSWERED)} className={answeredClassName}>Answered Polls</button>
             </div>

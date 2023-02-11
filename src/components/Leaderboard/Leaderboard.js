@@ -17,7 +17,7 @@ const Leaderboard = ({ users }) => {
                         {users.map(({id, avatarURL, name, answers, questions }) => 
                           {
                             return (
-                                <tr>
+                                <tr key={id}>
                                     <td>
                                         <div className="Leaderboard-user">
                                         <img src={avatarURL} alt={`Avatar of ${name}`} className="Leaderboard-avatar" />

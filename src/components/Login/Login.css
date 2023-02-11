@@ -2,7 +2,7 @@
     flex: 1;
     margin: 15rem;
     padding: 0rem 2rem 2rem 2rem;
-    border: solid darkorchid 0.1rem;
+    border: solid rgb(213, 156, 227) 0.1rem;
     border-radius: 0.5rem;
     align-items: center;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .Login-error {
-    color: brown;
+    color: darkorchid;
 }
 
 .Login-inputDiv {

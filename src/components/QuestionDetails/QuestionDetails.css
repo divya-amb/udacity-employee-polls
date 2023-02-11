@@ -1,5 +1,5 @@
 .QuestionDetails-container {
-    border: solid darkorchid 0.1rem;
+    border: solid rgb(213, 156, 227) 0.1rem;
     border-radius: 0.5rem;
     align-items: center;
     display: flex;
@@ -40,7 +40,7 @@
 }
 
 .QuestionDetails-option {
-    border: solid darkorchid 0.1rem;
+    border: solid rgb(213, 156, 227) 0.1rem;
     border-radius: 0.5rem;
     align-items: center;
     display: flex;
@@ -57,7 +57,7 @@
 }
 
 .QuestionDetails-voteInfo {
-    border-top: solid darkorchid 0.1rem;
+    border-top: solid rgb(213, 156, 227) 0.1rem;
     padding: 0.5rem;
     width: 100%;
     text-align: end;
@@ -65,10 +65,15 @@
 }
 
 .QuestionDetails-answered {
-    background-color: plum;
+    background-color: rgb(238, 201, 238);
     box-shadow: inset 1px 1px mediumorchid;
 }
 
 .QuestionDetails-notAnswered {
     cursor: pointer;
+}
+
+.QuestionDetails-notAnswered:hover {
+    background-color: rgb(238, 201, 238);
+    box-shadow: 1px 1px 1px mediumorchid;
 }

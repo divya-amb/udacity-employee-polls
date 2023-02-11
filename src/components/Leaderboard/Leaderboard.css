@@ -1,5 +1,5 @@
 .Leaderboard-container {
-    border: solid darkorchid 0.1rem;
+    border: solid rgb(213, 156, 227) 0.1rem;
     border-radius: 0.5rem;
     align-items: center;
     display: flex;
@@ -9,14 +9,14 @@
     width: 100%;
 }
 
-.Leaderboard-container tr:nth-child(even){background-color: plum;}
+.Leaderboard-container tr:nth-child(even){background-color: rgb(234, 199, 243);}
 
 .Leaderboard-table {
     min-width: 20rem;
     width: 90%;
     margin: 2rem;
     border-spacing: 0px;
-    border: solid darkorchid 0.1rem;
+    border: solid rgb(213, 156, 227) 0.1rem;
     border-radius: 0.5rem;
 }
 

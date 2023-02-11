@@ -1,5 +1,5 @@
 .Question-container {
-    border: solid darkorchid 0.1rem;
+    border: solid rgb(213, 156, 227) 0.1rem;
     border-radius: 0.5rem;
     align-items: center;
     display: flex;
@@ -8,10 +8,13 @@
     margin: 1rem;
     padding: 1rem;
     box-shadow: 3px 3px 3px mediumorchid;
+    color: darkorchid;
 }
 
 .Question-container:hover {
-    background-color: plum;
+    background-color: rgb(234, 199, 243);
+    box-shadow: 1px 1px 1px mediumorchid;
+    color: white;
 }
 
 .Question-link {

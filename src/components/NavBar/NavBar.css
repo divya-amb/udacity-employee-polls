@@ -1,5 +1,5 @@
 .NavBar-container {
-    background-color: mediumorchid;
+    background-color: rgb(234, 199, 243);
     height: 15vh;
     width: 100%;
     align-items: center;
@@ -8,15 +8,19 @@
     flex-direction: column;
 }
 
+.NavBar-container a:hover {
+    color: white;
+}
+
 .NavBar-header {
     display: flex;
 }
 
 .NavBar-navigation {
-    background-color: mediumorchid;
+    background-color: rgb(213, 156, 227);
     display: flex;
     flex: 2;
-    padding-top:0.5rem;
+    padding-top:1.5rem;
     justify-content: space-between;
     width: 100%;
 }

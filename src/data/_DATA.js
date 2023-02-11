@@ -45,14 +45,6 @@ let users = {
     },
     questions: [],
   },
-  da: {
-    id: 'da',
-    password:'p',
-    name: 'Div Amb',
-    avatarURL: null,
-    answers: {},
-    questions: [],
-  },
 }
 
 let questions = {

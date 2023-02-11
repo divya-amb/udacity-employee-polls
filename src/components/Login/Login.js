@@ -34,21 +34,21 @@ const Login = ({ isValidLogin, dispatch }) => {
         <form onSubmit={onSubmitLogin}>
             <div className="Login-container">
                 <h3>Login</h3>
-                {inputError && <div className="Login-error">
+                {inputError && <div className="Login-error" data-testid="empty-error-message">
                     <p>Please enter non empty username and password values.</p>
                 </div>}
-                {!inputError && isValidLogin === false && <div className="Login-error">
+                {!inputError && isValidLogin === false && <div className="Login-error" data-testid="error-message">
                     <p>Please try again with valid username and/or password.</p>
                 </div>}
                 <div className="Login-inputDiv">
                 <span>Username: </span>
-                <input type="text" data-testid="username_input" value={inputID} onChange={onUsernameChanged} />
+                <input type="text" data-testid="username-input" value={inputID} onChange={onUsernameChanged} />
                 </div>
                 <div className="Login-inputDiv">
                 <span>Password: </span>
-                <input type="password" data-testid="password_input" value={inputPassword} onChange={onPasswordChanged} />
+                <input type="password" data-testid="password-input" value={inputPassword} onChange={onPasswordChanged} />
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" data-testid="submit-button">Submit</button>
             </div>
         </form>
        

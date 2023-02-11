@@ -7,6 +7,7 @@ const Login = ({ isValidLogin, dispatch }) => {
     const [inputID, setInputID] = useState("");
     const [inputPassword, setInputPassword] = useState("");
     const [inputError, setInputError] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const onUsernameChanged = (e) => {
         e.preventDefault();
@@ -20,6 +21,7 @@ const Login = ({ isValidLogin, dispatch }) => {
 
     const onSubmitLogin = async (e) => {
         e.preventDefault();
+        setLoading(true);
         if (!inputID || !inputPassword) {
             setInputError(true);
         } else {
@@ -28,6 +30,7 @@ const Login = ({ isValidLogin, dispatch }) => {
             setInputID("");
             setInputPassword("");
         }
+        setLoading(false);
     }
 
     return (
@@ -37,7 +40,7 @@ const Login = ({ isValidLogin, dispatch }) => {
                 {inputError && <div className="Login-error" data-testid="empty-error-message">
                     <p>Please enter non empty username and password values.</p>
                 </div>}
-                {!inputError && isValidLogin === false && <div className="Login-error" data-testid="error-message">
+                {!inputError && !loading && isValidLogin === false && <div className="Login-error" data-testid="error-message">
                     <p>Please try again with valid username and/or password.</p>
                 </div>}
                 <div className="Login-inputDiv">
